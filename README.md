@@ -16,7 +16,7 @@ We are still in the design phase. There are two questions: What dosage of drug s
 Write a script ```stent_development``` which will compute the probability $P$ of a successful treatment via a Monte Carlo approach. You will test the 2-dimensional space given by $5\leq L \leq 30$ and $10 \leq D \leq 50$ (steps of $1$ for each) and will use
 
 $$
-E(L,D,S)= 24\log(L\cdot D^2)+0.18L\cdot D^2-9.5(S+4)
+E(L,D,S)= 24\ln(L\cdot D^2)+0.18L\cdot D^2-9.5(S+4)
 $$
 
 as the effectiveness equation. The side effect parameter value $S$ will be randomly chosen from a normal distribution with average $0.02L\cdot D^2$ and standard deviation $6$. (This implies that the chance of side effects increases the longer the stent is in place and the higher the drug dosage, which makes sense.)
