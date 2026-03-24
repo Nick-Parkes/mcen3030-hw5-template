@@ -19,7 +19,7 @@ $$
 E(L,D,S)= 24\log(L\cdot D^2)+0.18L\cdot D^2-9.5(S+4)
 $$
 
-as the effectiveness equation. The side effect parameter value $S$ will be randomly chosen from a normal distribution with average $0.2L\cdot D^2$ and standard deviation $6$. (This implies that the chance of side effects increases the longer the stent is in place and the higher the drug dosage, which makes sense.)
+as the effectiveness equation. The side effect parameter value $S$ will be randomly chosen from a normal distribution with average $0.02L\cdot D^2$ and standard deviation $6$. (This implies that the chance of side effects increases the longer the stent is in place and the higher the drug dosage, which makes sense.)
 
 Test ```N_tot=1000``` points at each of the $(L,D)$ pairs. We will define a "successful treatment" as a case in which $E \geq 100$. You will compute 
 
